@@ -66,7 +66,7 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: #333333;
     border-bottom: 1px solid #332b2b;
     transition-duration: .2s;
     transition-property: background-color;
@@ -89,7 +89,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    background: #453e3d;
+    background: #4D4D4D;
     color: #ffffff;
     opacity: 0.8;
 }
@@ -112,4 +112,9 @@ window#waybar {
     color: #ffffff;
     padding: 2px 8px;
     opacity: 0.7;
+}
+#custom-display {
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
 }

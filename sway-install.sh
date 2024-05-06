@@ -57,7 +57,7 @@ sudo systemctl enable bluetooth
 sudo apt install -y evince pdfarranger
 
 # Others
-sudo apt install -y figlet galculator cpu-x udns-utils whois curl tree neofetch
+sudo apt install -y figlet galculator cpu-x udns-utils whois curl tree neofetch linux-utils
 
 # Fonts and icons for now
 sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme

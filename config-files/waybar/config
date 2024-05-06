@@ -1,19 +1,10 @@
-//====================================================================================================//
-// Waybar Configuration File                                                                          //
-//----------------------------------------------------------------------------------------------------//
-// Purpose: Creates a minimalistic (yet functional) waybar at                                         //
-// the top of the screen.                                                                             //
-// themes and colors, set the wallpaper, and more.                                                    //
-//                                                                                                    //
-// License: Creative Commons Attribution 4.0 International                                            //
-//                                                                                                    //
-// Credit:                                                                                            //
-// Battery section adapted from:                                                                      //
-// https://github.com/Egosummiki/dotfiles/blob/master/waybar/config                                   //
-//                                                                                                    //
-// Pipewire audio adapted from:                                                                       //
-// https://www.reddit.com/r/swaywm/comments/sks343/pwvolume_pipewire_volume_control_and_waybar_module //
-//====================================================================================================//
+// Waybar Configuration File     
+//
+// Purpose: Creates a minimalistic (yet functional) waybar at
+// the top of the screen.
+// themes and colors, set the wallpaper, and more.
+// 
+//
 
 {
     "layer": "top",
@@ -41,7 +32,7 @@
     },
 
     "clock": {
-        "timezone": "America/Detroit",
+        "timezone": "America/Denver",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}",
     },
@@ -50,7 +41,7 @@
         "states": {
             // "good": 95,
             "warning": 30,
-            "critical": 15,
+            "critical": 20,
         },
         "format": "{icon} {capacity}%",
         "format-charging": "⚡{capacity}%",
@@ -85,5 +76,11 @@
         "exec": "/usr/bin/hostname -f",
         "interval": "once",
         "on-click": "/usr/bin/rxvt -e /usr/bin/htop",
+    },
+    "custom/display": {
+      "format": "{}",
+      "exec": "~/.config/waybar/display_info.sh",
+      "interval": 10,
+      "tooltip": false
     },
 }
